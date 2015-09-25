@@ -1,8 +1,12 @@
 /**
  * Created by yohahn on 8/6/15.
  */
-Meteor.publish('posts', function() {
-    return Posts.find();
+Meteor.publish('posts', function(options) {
+    check(options, {
+        sort: Object,
+        limit: Number
+    });
+    return Posts.find({}, options);
 });
 
 Meteor.publish('comments', function(postId) {
