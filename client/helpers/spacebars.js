@@ -9,3 +9,4 @@ Template.registerHelper('pluralize', function(n, thing) {
         return n + ' ' + thing + 's';
     }
 });
+Ø
