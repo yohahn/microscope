@@ -1,4 +1,4 @@
 /**
  * Created by yohahn on 8/5/15.
  */
-Meteor.subscribe('posts');
+Meteor.subscribe('posts', 'bob-smith');
