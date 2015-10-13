@@ -21,4 +21,4 @@ Tinytest.addAsync("Errors - template", function(test, done) {
         test.equal(Errors.collection.find({}).count(), 0);
         done();
     }, 3500);
-})
+});
