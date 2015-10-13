@@ -10,6 +10,6 @@ Template.meteorErrors.helpers({
 Template.meteorError.rendered = function() {
     var error = this.data;
     Meteor.setTimeout(function() {
-        Error.collection.remove(error._id);
+        Errors.collection.remove(error._id);
     }, 3000);
 };
